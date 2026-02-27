@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahratul | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fdfaf6;
+            color: #433d3c;
+        }
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-savanna {
+            background: linear-gradient(to bottom, #fdfaf6, #f7f1e5);
+        }
+        .glass-warm {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(168, 136, 115, 0.1);
+        }
+        .elephant-stamp {
+            opacity: 0.03;
+            position: absolute;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .btn-earth {
+            background-color: #8b7e74;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        .btn-earth:hover {
+            background-color: #6d5d54;
+            transform: translateY(-2px);
+        }
+        .skill-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .skill-card:hover {
+            background-color: #ffffff;
+            box-shadow: 0 20px 40px rgba(139, 126, 116, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-savanna">
+
+    <!-- Dekorasi Gajah Minimalis -->
+    <div class="elephant-stamp top-20 right-10">
+        <svg width="400" height="400" viewBox="0 0 24 24" fill="currentColor"><path d="M22,11.5c0-1.9-1.3-3.5-3-4.1V7c0-2.2-1.8-4-4-4H9C6.8,3,5,4.8,5,7v0.5C3.3,8.1,2,9.7,2,11.5c0,1.3,0.7,2.4,1.8,3 c-0.1,0.3-0.2,0.6-0.2,1c0,1.4,1.1,2.5,2.5,2.5h1c0.3,0,0.5-0.2,0.5-0.5v-2h2v2c0,0.3,0.2,0.5,0.5,0.5h1c0.3,0,0.5-0.2,0.5-0.5v-2h2 v2c0,0.3,0.2,0.5,0.5,0.5h1c0.3,0,0.5-0.2,0.5-0.5v-2h2v2c0,0.3,0.2,0.5,0.5,0.5h1c1.4,0,2.5-1.1,2.5-2.5c0-0.4-0.1-0.7-0.2-1 C21.3,13.9,22,12.8,22,11.5z"/></svg>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass-warm px-8 py-3 rounded-2xl shadow-sm">
+            <h1 class="text-xl font-bold tracking-widest text-stone-700">ZAHRATUL<span class="text-stone-400">FAIRUZ</span></h1>
+            <div class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-stone-500">
+                <a href="#about" class="hover:text-stone-800 transition">Intro</a>
+                <a href="#skills" class="hover:text-stone-800 transition">Skills</a>
+                <a href="#blog" class="hover:text-stone-800 transition">Blog</a>
+                <a href="#projects" class="hover:text-stone-800 transition">Work</a>
+            </div>
+            <a href="tel:=628986471122" class="text-xs font-bold border-b-2 border-stone-800 pb-1 hover:text-stone-400 hover:border-stone-400 transition">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="min-h-screen flex items-center px-6 relative">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="z-10">
+                <span class="text-stone-400 font-medium tracking-[0.3em] text-xs uppercase mb-6 block">Fresh Graduate @ Cyber Media</span>
+                <h1 class="serif text-5xl md:text-7xl mb-8 leading-tight">
+                    Patience of an <span class="italic text-stone-500">Elephant</span>, Mind of an <span class="italic text-stone-500">Engineer</span>.
+                </h1>
+                <p class="text-stone-500 text-lg max-w-lg leading-relaxed mb-10">
+                    Halo, Aku <span class="text-stone-800 font-semibold">Zahratul Fairuz Sita</span>. Aku percaya membangun infrastruktur IT itu harus kayak gajah: kuat, stabil, dan nggak gampang goyah. Welcome to my portofolio!
+                <div class="flex items-center gap-8">
+                    <a href="#projects" class="btn-earth px-8 py-4 rounded-full text-sm font-bold shadow-lg shadow-stone-200">View Projects</a>
+                    <a href="#skills" class="text-stone-600 font-bold text-sm border-b border-stone-300 hover:border-stone-800 transition">My Toolkit</a>
+                </div>
+            </div>
+            <div class="relative hidden md:block">
+                <div class="w-full h-[500px] bg-[#e3dcd2] rounded-[40px] overflow-hidden relative shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&q=80&w=1000" alt="Elephant Nature" class="w-full h-full object-cover mix-blend-multiply opacity-80">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#e3dcd2] to-transparent"></div>
+                </div>
+                <!-- Mini Aesthetic Card -->
+                <div class="absolute -bottom-6 -left-6 glass-warm p-6 rounded-3xl shadow-xl max-w-[200px]">
+                    <p class="text-[10px] text-stone-400 uppercase tracking-widest mb-2">Philosophy</p>
+                    <p class="text-xs italic text-stone-600">"Gajah tuh ingatannya kuat, sama kayak aku yang masih ingat kesalahanmu 😜"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-32 px-6 bg-[#f7f1e5]">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+                <div class="max-w-xl">
+                    <h2 class="serif text-4xl mb-6">Expertise & <span class="italic text-stone-500">Specialization</span></h2>
+                    <p class="text-stone-500 text-sm">Aku fokus pada stabilitas jaringan dan efisiensi sistem. Berikut adalah beberapa hal yang aku kuasai selama belajar di SMK.</p>
+                </div>
+                <div class="text-stone-300 text-6xl hidden md:block opacity-50">🐘</div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="skill-card p-10 rounded-[2.5rem] border border-stone-200">
+                    <p class="text-stone-300 font-bold mb-8 italic">01.</p>
+                    <h3 class="serif text-2xl mb-4">Cisco</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed uppercase tracking-wider">Routing, Switching, VLAN, Security.</p>
+                </div>
+                <div class="skill-card p-10 rounded-[2.5rem] border border-stone-200">
+                    <p class="text-stone-300 font-bold mb-8 italic">02.</p>
+                    <h3 class="serif text-2xl mb-4">Mikrotik</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed uppercase tracking-wider">Traffic Control, Firewall, Hotspot.</p>
+                </div>
+                <div class="skill-card p-10 rounded-[2.5rem] border border-stone-200">
+                    <p class="text-stone-300 font-bold mb-8 italic">03.</p>
+                    <h3 class="serif text-2xl mb-4">Debian</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed uppercase tracking-wider">Server Management, CLI, Services.</p>
+                </div>
+                <div class="skill-card p-10 rounded-[2.5rem] border border-stone-200">
+                    <p class="text-stone-300 font-bold mb-8 italic">04.</p>
+                    <h3 class="serif text-2xl mb-4">HTML</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed uppercase tracking-wider">Structure, Semantics, UI Foundation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="serif text-4xl mb-16 text-center">Gentle <span class="italic text-stone-500">Thoughts</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <article class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-3xl mb-6 bg-stone-100 aspect-video flex items-center justify-center">
+                        <span class="text-4xl filter grayscale group-hover:grayscale-0 transition duration-500"><img src="r server.jpeg"></span>
+                    </div>
+                    <p class="text-[10px] font-bold text-stone-400 tracking-[0.2em] mb-4 uppercase">Tech Journal</p>
+                    <h3 class="serif text-xl mb-4 group-hover:text-stone-500 transition">Mengapa Konfigurasi Harus Rapi?</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed line-clamp-2">Belajar dari struktur gajah, sebuah sistem harus punya pondasi yang kuat biar gak gampang error.</p>
+                </article>
+                <article class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-3xl mb-6 bg-stone-100 aspect-video flex items-center justify-center">
+                        <span class="text-4xl filter grayscale group-hover:grayscale-0 transition duration-500"><img src="mtcna.jpeg"></span>
+                    </div>
+                    <p class="text-[10px] font-bold text-stone-400 tracking-[0.2em] mb-4 uppercase">Personal</p>
+                    <h3 class="serif text-xl mb-4 group-hover:text-stone-500 transition">Life at Cyber Media</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed line-clamp-2">Cerita singkat tentang perjalanan aku dari yang ga ngerti apa-apa sampe ngerti apa itu subnetting.</p>
+                </article>
+                <article class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-3xl mb-6 bg-stone-100 aspect-video flex items-center justify-center">
+                        <span class="text-4xl filter grayscale group-hover:grayscale-0 transition duration-500"><img src="TOPOLOGI JAKARTA PRALSP.png"></span>     
+                    </div>
+                    <p class="text-[10px] font-bold text-stone-400 tracking-[0.2em] mb-4 uppercase">Networking</p>
+                    <h3 class="serif text-xl mb-4 group-hover:text-stone-500 transition">Cisco CLI vs Winbox</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed line-clamp-2">Analisis santai mana yang lebih asik buat dipake di skala kecil.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-32 px-6 bg-stone-800 text-stone-100 rounded-t-[60px]">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-20">
+                <h2 class="serif text-5xl mb-6">Proven <span class="italic text-stone-400">Footprints</span></h2>
+                <p class="text-stone-400 max-w-lg">Aku percaya bahwa hasil kerja nyata lebih bermakna daripada sekadar kata-kata. Ini adalah beberapa projectku.</p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="group relative bg-stone-700/30 p-10 rounded-[40px] border border-stone-600 flex flex-col md:flex-row justify-between items-center hover:bg-stone-700 transition duration-500">
+                    <div>
+                        <p class="text-stone-400 text-xs mb-2 tracking-widest">WEB DEVELOPMENT</p>
+                        <h3 class="serif text-3xl">Aplikasi Kasir Minimalis</h3>
+                    </div>
+                    <div class="text-right mt-6 md:mt-0">
+                        <p class="text-stone-400 text-xs mb-4">HTML • Tailwind • JS</p>
+                        <span class="text-stone-100 text-2xl group-hover:translate-x-2 transition inline-block">→</span>
+                    </div>
+                </div>
+
+                <div class="group relative bg-stone-700/30 p-10 rounded-[40px] border border-stone-600 flex flex-col md:flex-row justify-between items-center hover:bg-stone-700 transition duration-500">
+                    <div>
+                        <p class="text-stone-400 text-xs mb-2 tracking-widest">NETWORKING</p>
+                        <h3 class="serif text-3xl">Network Maintenance</h3>
+                    </div>
+                    <div class="text-right mt-6 md:mt-0">
+                        <p class="text-stone-400 text-xs mb-4">Hardware • Cabling • Troubleshooting</p>
+                        <span class="text-stone-100 text-2xl group-hover:translate-x-2 transition inline-block">→</span>
+                    </div>
+                </div>
+
+                <div class="group relative bg-stone-700/30 p-10 rounded-[40px] border border-stone-600 flex flex-col md:flex-row justify-between items-center hover:bg-stone-700 transition duration-500">
+                    <div>
+                        <p class="text-stone-400 text-xs mb-2 tracking-widest">SYSTEM CONFIG</p>
+                        <h3 class="serif text-3xl">Cisco & Mikrotik Hybrid</h3>
+                    </div>
+                    <div class="text-right mt-6 md:mt-0">
+                        <p class="text-stone-400 text-xs mb-4">VLAN • OSPF • Firewall</p>
+                        <span class="text-stone-100 text-2xl group-hover:translate-x-2 transition inline-block">→</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 bg-stone-800 text-stone-400 text-center">
+        <div class="max-w-2xl mx-auto">
+            <p class="serif text-stone-100 text-2xl mb-8 italic">Zahratul Fairuz Sita</p>
+            <p class="text-sm leading-relaxed mb-10">Membangun konektivitas dengan penuh kesabaran dan ketelitian. Mari bicara lebih lanjut tentang kemungkinan kerja sama di masa depan.</p>
+            <div class="flex justify-center gap-10 text-[10px] font-bold tracking-[0.2em] uppercase">
+                <a href="https://www.instagram.com/rrrafrz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="hover:text-stone-100 transition">Instagram</a>
+                <a href="https://www.linkedin.com/in/rrafrz" target="_blank" class="hover:text-stone-100 transition">LinkedIn</a>
+                <a href="https://github.com/rrafrz" target="_blank" class="hover:text-stone-100 transition">Github</a>
+            </div>
+            <div class="mt-20 text-[9px] opacity-30 tracking-widest uppercase">
+                &copy; 2024 • Inspired by Gajah • Crafted with Love
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
